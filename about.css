@@ -3,7 +3,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.2),#222),url("../images/about_background.jpg");
     background-position: center center;
     background-size: cover;
-    height: 25vw;
+    height: 28vw;
 }
 
 .aboutMe{
@@ -30,13 +30,13 @@
 
 @media screen and (max-width:410px){
     .about{
-        height: 62vw;
+        height: 70vw;
     }
 }
 
 @media screen and (max-width:470px){
     .about{
-        min-height: 49vw;
+        height: 75vw;
     }
     .profileImage{
         height: 100px;

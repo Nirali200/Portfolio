@@ -1,27 +1,32 @@
 
 .c-contain{
-    max-height: 560px;
+    height: 35vw;
 }
 
 .contact{
     display: flex;
-    
     margin-left: auto;
     margin-right: auto;
 }
 
+.c-head{
+    margin-top: 75px;
+    height: 40%;
+}
+
 .email-form{
-    
-    display: block;
+    display: grid;
     width: 555px;
+    height: 300px;
+    gap: 0px;
     margin-left: auto;
     margin-right: auto;
     top: -10px;
 }
 
 .label{
-    margin-bottom: 51px;
     font-size: var(--small-font-size);
+    margin-bottom: 2px;
     color: #fff;
     font-weight: var(--font-weight);
 }
@@ -41,4 +46,51 @@
 .ip:focus{
     border: .3px solid #00d6b4;
     outline: .3px solid #00d6b4;
+}
+
+@media screen and (max-width : 1111px){
+    .c-contain{
+        height: 40vw;
+    }
+    
+}
+
+@media screen and (max-width : 970px){
+
+    .email-form{
+       width: 400px;
+    }
+
+}
+
+@media screen and (max-width:870px){
+    
+    .email-form{
+        width: 75%;
+    }
+    .ip{
+        height: 15px;
+    }
+    .c-contain{
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width:410px){
+    .c-head{
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+    .button{
+        padding: 10px 23px;
+    }
+}
+
+@media screen and (max-width:470px){
+    .c-contain{
+        height: 95%;
+    }
+    .c-head{
+        margin-top: 40px;
+    }
 }
