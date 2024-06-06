@@ -3,7 +3,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.2),#222),url("../images/about_background.jpg");
     background-position: center center;
     background-size: cover;
-    height: 30vw;
+    height: 25vw;
 }
 
 .aboutMe{
@@ -13,19 +13,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 32%;
-    margin-right: 32%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .profileImage{
-      height: 100px;
-      width: 100px;
-      border-radius: 100px;
-      margin-bottom: 35px;
+      height: 150px;
+      width: 150px;
+      border-radius: 130px;
+      margin-bottom: 30px;
 }
 
 .peragraph{
     font-size: var(--small-font-size);
+}
+
+@media screen and (max-width:410px){
+    .about{
+        height: 62vw;
+    }
+}
+
+@media screen and (max-width:470px){
+    .about{
+        min-height: 49vw;
+    }
+    .profileImage{
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        margin-bottom: 25px;
+    }
 }
 
 
