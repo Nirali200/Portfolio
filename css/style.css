@@ -44,7 +44,7 @@
 
 .left{
     display: flex;
-    color: rgb(147, 232, 223);
+    color:  #00d6b4;
     justify-content: center;
     align-items: center;
     font-size: 45px;
@@ -147,7 +147,7 @@
     display: grid;
     position: relative;
     grid-template-rows: repeat(2,auto);
-    grid-template-columns: repeat(3,300px);
+    grid-template-columns: repeat(3,auto);
     justify-content: center;
     column-gap: 20px;
     row-gap: 20px;
@@ -167,7 +167,25 @@
     box-shadow: 0px 5px 25px #00d6b4;
     object-fit: cover;
 }
-
+figure figcaption a{
+    text-decoration: none;
+    color: white;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0;
+}
+.lists figure figcaption{
+    align-self: center;
+}
+figcaption:hover{
+    color: #00d6b4;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow:  0px 5px 25px #00d6b4;
+}
 
 
 @media screen and (max-width:1111px) {
