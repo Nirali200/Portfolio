@@ -25,3 +25,12 @@ const addData = (data) =>{
    var quote = document.querySelector('.mainHeading');
    quote.innerHTML = "' " + text +" '";
 }
+
+
+const mainHeading = document.querySelector('.mainHeading');
+
+window.onload = ()=>{
+        mainHeading.style.transform = "translatey(0)";
+
+    
+}

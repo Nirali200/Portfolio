@@ -97,9 +97,21 @@
     height: 250px;
     font-size: 3vw;
     font-weight: var(--font-weight);
-    overflow: hidden;
+    overflow: scroll;
     margin-bottom: 30px;
+    transform: translatey(calc(200px - 100%));
+    transition: 1s;
 }
+
+.mainHeading::-webkit-scrollbar{
+    display: none;
+}
+
+.mainHeading:hover{
+    scroll-behavior: smooth;
+    transform: translatey(calc(200px - 100%));
+}
+
 
 .button{
     position: relative;
