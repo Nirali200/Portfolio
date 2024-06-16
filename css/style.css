@@ -83,8 +83,7 @@
 }
 
 .w-contain{
-    padding-left: 25%;
-    padding-right: 25%;
+    width: 45%;
     position: relative;
     display: grid;
 }
@@ -147,6 +146,8 @@
 }
 .work{
     position: relative;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .secTitle{
@@ -188,6 +189,7 @@ figure{
     flex-direction: column;
     gap: 15px;
     margin: 0;
+    z-index: 100 !important;
 }
 .lists figure figcaption{
     align-self: center;
@@ -209,6 +211,9 @@ figcaption:hover{
     }
     .mainHeading{
         height: 18vw;
+    }
+    .one{
+        width: 100%;
     }
 }
 
@@ -236,7 +241,8 @@ figcaption:hover{
     }
     .one{
         height: 70%;
-        width: 100%;
+        width: 79%;
+        margin: 0 auto;
     }
     .lists{
     grid-template-columns: 90%;
@@ -264,12 +270,36 @@ figcaption:hover{
 
 @media screen and (max-width:567px){
     .heading{
-        padding-left: 1%;
-        padding-right: 1%;
+        width: 70%;
     }
     .about{
         height: 35vw;
     }
+    
+    .skilland{
+        width: 100%;
+        flex-direction: column;
+    }
+    .containeer{
+        width: 100% !important;
+        margin: 0 auto !important;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .containear{
+        margin: 0 auto !important;
+    }
+    #skills{
+        width: 100% !important;
+    }
+    #services{
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    .service-cards{
+       flex-wrap: nowrap !important;
+    }
+
 }
 
 
@@ -338,3 +368,231 @@ figcaption:hover{
 
 
 
+.skilland{
+    display: flex;
+}
+
+
+
+#skills {
+    padding: 50px 0;
+    background-color: #222;
+    width: 50%;
+}
+
+.containeer {
+    width: 100%;
+    margin: 15px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.skill {
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.skill-bar {
+    justify-content: center;
+    width: 70%;
+    background-color: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 30px;
+    width: 0;
+    background-color: #00d6b4;
+    border-radius: 25px;
+    transition: width 1s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .containeer {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .skill h3 {
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+
+#services {
+    padding: 50px 0;
+    background-color: #222;
+    width: 50%;
+}
+
+.containear {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(119, 118, 118, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.card:hover{
+    box-shadow:  0px 5px 25px #00d6b4;
+}
+
+.card .icon img {
+    width: 64px;
+    height: 64px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #222;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .containear {
+        width: 70%;
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+
+
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+.icon-container {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+}
+.icon-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2em;
+    transition: transform 0.3s, color 0.3s;
+    position: relative;
+    z-index: 100;
+}
+.icon-container a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s, transform 0.3s;
+    transform: translateX(-50%);
+}
+.icon-container a:hover::after {
+    width: 100%;
+    transform: translateX(-50%) translateY(5px);
+}
+.icon-container a:hover {
+    transform: rotate(15deg) scale(1.2);
+    color: #00d6b4;
+}
+.icon-container a:hover i {
+    animation: bounce 0.3s;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .icon-container {
+        gap: 15px;
+        padding: 15px;
+    }
+    .icon-container a {
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 480px) {
+    .icon-container {
+        gap: 10px;
+        padding: 10px;
+    }
+    .icon-container a {
+        font-size: 1.5em;
+    }
+}

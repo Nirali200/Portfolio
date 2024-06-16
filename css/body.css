@@ -7,3 +7,8 @@ body{
     min-height: 100%;
     font-family: "Open Sans", sans-serif;
 }
+
+::selection{
+    color: #fff;
+    background-color: #43edd03c;
+}
