@@ -11,17 +11,17 @@ var getQuotes = () => {
     .then(data => addData(data));
 }
 
+var quote = document.getElementById('quotes');
 const addData = (data) =>{
    var text = data[0].quote;
-   var quote = document.querySelector('.mainHeading');
    quote.innerHTML = "' " + text +" '";
 }
 
 setInterval(() => {
-    mainHeading.style.transform = "translatey(calc(200px - 100%))";     
+    quote.style.transform = "translatey(calc(200px - 100%))";     
     getQuotes();
     setTimeout(()=>{
-        mainHeading.style.transform = "translatey(0)"; 
+        quote.style.transform = "translatey(0)"; 
     },2000);
 },5000)
 
