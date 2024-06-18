@@ -38,6 +38,8 @@ To view the portfolio website locally, follow these steps:
 
 ### Portfolio Page
 ![Portfolio Page](images/Portfolio.png)
+![Contacy Page](images/contact.png)
+![Skills & Services Page](images/Skills&services.png)
 
 ## ✨ Contributing
 
